@@ -71,7 +71,7 @@ bot.on('message', message => {
             return message.reply('NO!');
         }
         
-        message.channel.bulkDelete(amount,true);
+        message.channel.bulkDelete(amount + 1,true);
         //message.reply(`deleted ${amount} messages`);
     }
     
